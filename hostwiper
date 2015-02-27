@@ -1,0 +1,1 @@
+for f in *.file; do sed -r 's/ hostregex........./hostname/g' "$f" > "$f.new"; done
