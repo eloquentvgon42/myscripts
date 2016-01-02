@@ -1,0 +1,1 @@
+mail -s "servername restarted at: `date +%m.%d.%Y.%H.%M`" youremail@gmail.com
