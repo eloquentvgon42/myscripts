@@ -5,3 +5,6 @@ find big dir
 
 du -hsx * | sort -rh | head -10
 
+longest line in the file
+
+awk '{ if ( length > x ) { x = length; y = $0 } }END{ print y }' error.log
