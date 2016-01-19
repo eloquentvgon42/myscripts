@@ -1,0 +1,15 @@
+#to start as daemon with /bin/bash and port 27015 udp open 
+
+docker run -it -p 27015:27015/udp -d <dockerimage> /bin/bash
+
+#to connect to running container with bash shell 
+
+docker exec -it <container> /bin/bash
+
+docker pause 
+
+docker commit <container> <new image name>
+
+#save to export
+
+docker save mynewimage > /tmp/mynewimage.tar
