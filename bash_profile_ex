@@ -1,4 +1,4 @@
-bash_profile 
+#bash_profile 
 
 #The first line changes the bash prompt to be colorized, and rearranges the prompt to be “username@hostname:cwd $”
 
