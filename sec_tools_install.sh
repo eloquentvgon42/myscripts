@@ -1,6 +1,6 @@
 #!/bin/bash
 
-usr/bin/apt-get install -y  nmap nbtscan wireshark tshark vlan dsniff tcpdump john p7zip openjdk-7-jre python python-pip python-dev build-essential 
+usr/bin/apt-get install -y git nmap nbtscan wireshark tshark vlan dsniff tcpdump john p7zip openjdk-7-jre python python-pip python-dev build-essential 
 
 mkdir ~/tools
 
