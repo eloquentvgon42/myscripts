@@ -1,0 +1,11 @@
+sudo will not use all of the current environment values. Probably for security reasons. There are two possibilities how to overcome this:
+Call sudo -E add-apt-repository <additional-options>
+
+This will use all of the current environment.
+You can configure sudo to automatically copy http_proxy and https_proxy too. Do this:
+
+sudo visudo
+Add the following lines:
+
+Defaults env_keep +="http_proxy"
+Defaults env_keep +="https_proxy"
