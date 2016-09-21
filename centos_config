@@ -1,0 +1,35 @@
+edit /etc/sysconfig/ifcfg-eth0
+
+DEVICE=eth0
+BOOTPROTO=static
+IPADDR=146.175.139.13
+NETMASK=255.255.255.0
+GATEWAY=146.175.139.255
+HWADDR=00:25:90:81:5e:64
+NM_CONTROLLED="no"      
+ONBOOT="yes"
+TYPE=Ethernet
+IPV6INIT="no"
+
+This is what helped:
+To Disable Network Manager Service in Linux
+
+Login with root access or SSH to server
+
+To Stop Network Manager Service
+
+# service NetworkManager stop
+
+Configure chkconfig so that the Network Manager Service cannot start at Startup
+
+# chkconfig NetworkManager off
+
+Now Add default Net Manager
+
+# chkconfig network on
+
+Start default Manager
+
+# service network start
+
+Done.
