@@ -1,0 +1,7 @@
+# systemctl disable NetworkManager.service
+# systemctl stop NetworkManager.service
+# service network restart
+# chkconfig --list network
+   network         0:off   1:off   2:on   3:on   4:on   5:on   6:off
+# chkconfig network on
+# reboot
